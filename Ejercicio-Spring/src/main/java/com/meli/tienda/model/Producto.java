@@ -9,8 +9,6 @@ import jakarta.persistence.Table;
 
 import java.math.BigDecimal;
 
-import java.math.BigDecimal;
-
 @Entity
 @Table(name = "productos")
 public class Producto {
@@ -24,8 +22,6 @@ public class Producto {
 
     @Column(nullable = false, precision = 12, scale = 2)
     private BigDecimal precio;
-
-
 
     public Producto(){
     }

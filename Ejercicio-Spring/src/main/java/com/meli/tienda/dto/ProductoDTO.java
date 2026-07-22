@@ -9,11 +9,11 @@ import java.math.BigDecimal;
 public record ProductoDTO(
         Long id,
 
-@NotBlank(message = "El nombre no puede estar vacio")
+        @NotBlank(message = "El nombre no puede estar vacio")
         String nombre,
 
-@NotNull(message = "El precio es obligatorio")
-@PositiveOrZero(message = "El precio no puede ser negativo")
+        @NotNull(message = "El precio es obligatorio")
+        @PositiveOrZero(message = "El precio no puede ser negativo")
         BigDecimal precio
                 ) {
                 }
